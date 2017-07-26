@@ -9,5 +9,6 @@
 #ifndef HiSDK_Bridging_Header_h
 #define HiSDK_Bridging_Header_h
 #import "IAPHelper.h"
+#import "IAPShare.h"
 
 #endif /* HiSDK_Bridging_Header_h */

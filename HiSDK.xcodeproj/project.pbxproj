@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E4C535E1F28DF84005D8FE5 /* refund.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4C535D1F28DF84005D8FE5 /* refund.png */; };
+		6E4C53621F28E09F005D8FE5 /* no_ads.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4C53611F28E09F005D8FE5 /* no_ads.png */; };
 		B2CA9FE2C2D5334180E1EF0C /* Pods_HiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113B1B2204A1F346C4DEA55D /* Pods_HiSDK.framework */; };
 		CC00A5911F286EDF00C66937 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00A5901F286EDF00C66937 /* Constants.swift */; };
 		CC00A5931F2870E100C66937 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC00A5921F2870E100C66937 /* GoogleService-Info.plist */; };
@@ -16,7 +18,6 @@
 		CC21D3C41F289B0B0029592F /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CC21D3BF1F289B0B0029592F /* NSString+Base64.m */; };
 		CC21D3C51F289B0B0029592F /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CC21D3C11F289B0B0029592F /* SFHFKeychainUtils.m */; };
 		CC21D3CB1F289E910029592F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC21D3CA1F289E910029592F /* StoreKit.framework */; };
-		CC21D3CD1F28A0360029592F /* refund.png in Resources */ = {isa = PBXBuildFile; fileRef = CC21D3CC1F28A0360029592F /* refund.png */; };
 		CCC79F7D1F285220005F6501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC79F7C1F285220005F6501 /* AppDelegate.swift */; };
 		CCC79F7F1F285220005F6501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC79F7E1F285220005F6501 /* ViewController.swift */; };
 		CCC79F821F285220005F6501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC79F801F285220005F6501 /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 		113B1B2204A1F346C4DEA55D /* Pods_HiSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B5DF2C9F108E66D54F26C7 /* Pods-HiSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiSDK/Pods-HiSDK.release.xcconfig"; sourceTree = "<group>"; };
 		6AF063E37D3126BC1F8FF5ED /* Pods-HiSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiSDK/Pods-HiSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		6E4C535D1F28DF84005D8FE5 /* refund.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refund.png; sourceTree = "<group>"; };
+		6E4C53611F28E09F005D8FE5 /* no_ads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_ads.png; sourceTree = "<group>"; };
 		CC00A5901F286EDF00C66937 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CC00A5921F2870E100C66937 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC00A5941F2871C200C66937 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
@@ -50,7 +53,6 @@
 		CC21D3C11F289B0B0029592F /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
 		CC21D3C91F289B900029592F /* HiSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HiSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 		CC21D3CA1F289E910029592F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		CC21D3CC1F28A0360029592F /* refund.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refund.png; path = ../../../../refund.png; sourceTree = "<group>"; };
 		CCC79F791F285220005F6501 /* HiSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC79F7C1F285220005F6501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC79F7E1F285220005F6501 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +141,8 @@
 		CC21D3B91F289B0B0029592F /* IAPHelper */ = {
 			isa = PBXGroup;
 			children = (
-				CC21D3CC1F28A0360029592F /* refund.png */,
+				6E4C53611F28E09F005D8FE5 /* no_ads.png */,
+				6E4C535D1F28DF84005D8FE5 /* refund.png */,
 				CC21D3BA1F289B0B0029592F /* IAPHelper.h */,
 				CC21D3BB1F289B0B0029592F /* IAPHelper.m */,
 				CC21D3BC1F289B0B0029592F /* IAPShare.h */,
@@ -221,7 +224,8 @@
 				TargetAttributes = {
 					CCC79F781F285220005F6501 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = XY29E79Z8X;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -255,9 +259,10 @@
 				CCC79F971F285554005F6501 /* click.png in Resources */,
 				CC00A5931F2870E100C66937 /* GoogleService-Info.plist in Resources */,
 				CCC79F821F285220005F6501 /* Main.storyboard in Resources */,
+				6E4C53621F28E09F005D8FE5 /* no_ads.png in Resources */,
 				CCC79F991F285598005F6501 /* install-button.png in Resources */,
 				CCC79F9D1F2866F2005F6501 /* play_button.png in Resources */,
-				CC21D3CD1F28A0360029592F /* refund.png in Resources */,
+				6E4C535E1F28DF84005D8FE5 /* refund.png in Resources */,
 				CCC79F9F1F28696C005F6501 /* ad.png in Resources */,
 				CCC79F911F285242005F6501 /* SupportController.xib in Resources */,
 				CCC79F951F28554B005F6501 /* install.png in Resources */,
@@ -309,7 +314,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -452,10 +457,14 @@
 			baseConfigurationReference = 6AF063E37D3126BC1F8FF5ED /* Pods-HiSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XY29E79Z8X;
 				INFOPLIST_FILE = HiSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.sinhviendev.ohhi;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.higamestudio.oceanar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "HiSDK-Bridging-Header.h";
@@ -468,10 +477,14 @@
 			baseConfigurationReference = 49B5DF2C9F108E66D54F26C7 /* Pods-HiSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XY29E79Z8X;
 				INFOPLIST_FILE = HiSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.sinhviendev.ohhi;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.higamestudio.oceanar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "HiSDK-Bridging-Header.h";

@@ -17,6 +17,8 @@ class SupportController: UIViewController ,GADNativeExpressAdViewDelegate, GADVi
     @IBOutlet weak var spLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         rewardBasedVideo = GADRewardBasedVideoAd.sharedInstance()
         rewardBasedVideo?.delegate = self
         
@@ -80,10 +82,68 @@ class SupportController: UIViewController ,GADNativeExpressAdViewDelegate, GADVi
     
     @IBAction func playGameDidTap(_ sender: Any) {
         
-        
-        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func refund(_ sender : Any)
+    {
+        if (IAPShare.sharedHelper().iap.isPurchasedProductsIdentifier(IAP.removeAdsIAPID)) {
+            
+            IAPShare.sharedHelper().iap.restoreProducts(completion: { (payment, err) in
+                if (err != nil)
+                {
+                    self.displayAlert("An error has occurred please try again")
+                    return
+                }
+                 self.displayAlert("Refund success!")
+                IAPShare.sharedHelper().iap.clearSavedPurchasedProduct(byID: IAP.removeAdsIAPID)
+                for trans in payment!.transactions {
+                    let purchased = trans.payment.productIdentifier
+                    if (purchased == IAP.removeAdsIAPID)
+                    {
+                        
+                        IAPShare.sharedHelper().iap.clearSavedPurchasedProduct(byID: IAP.removeAdsIAPID)
+                    }
+                    
+                }
+            })
+            
+        }else
+        {
+            displayAlert("No products have been purchased yet!")
+            print("didn't buy")
+        }
         
     }
+    
+    @IBAction func removeAds (_ sender : Any)
+    {
+        
+        let product = IAPShare.sharedHelper().iap.products.first as! SKProduct
+        IAPShare.sharedHelper().iap.buyProduct(product) { (trans) in
+            
+            if (trans?.error == nil)
+            {
+               IAPShare.sharedHelper().iap.provideContent(with: trans)
+               self.dismiss(animated: true, completion: nil)
+            }
+            
+            
+            
+        }
+        
+    }
+    
+    func displayAlert(_ mess : String)
+    {
+        let alert = UIAlertController(title: "Notify", message: mess, preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .cancel) { (act) in
+            
+        }
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
+    }
+    
     
     // MARK: - GADNativeExpressAdViewDelegate
     
@@ -106,6 +166,8 @@ class SupportController: UIViewController ,GADNativeExpressAdViewDelegate, GADVi
         print("The video asset has completed playback.")
         
     }
+    
+    
     
     // MARK: GADRewardBasedVideoAdDelegate implementation
     
@@ -145,4 +207,8 @@ class SupportController: UIViewController ,GADNativeExpressAdViewDelegate, GADVi
     
 
 
+}
+extension SupportController
+{
+    
 }

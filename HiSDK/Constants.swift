@@ -17,3 +17,7 @@ struct Admob {
     static let nativeUnitId = "ca-app-pub-9241292359230405/3697480125"
 
 }
+
+struct IAP {
+    static let removeAdsIAPID = "net.hiiap.removeads1"
+}

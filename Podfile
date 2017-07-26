@@ -6,7 +6,8 @@ target 'HiSDK' do
   use_frameworks!
   pod 'Firebase/Core'
   pod 'Firebase/AdMob'
-
+  pod 'FTIndicator/FTNotificationIndicator'
+  pod 'DeviceKit'
   # Pods for HiSDK
 
 end
