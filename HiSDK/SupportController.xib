@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Hero.otf">
+            <string>Hero</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SupportController" customModule="HiSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="nativeExpressAdView" destination="s6m-ve-l7k" id="4DW-a7-GJk"/>
+                <outlet property="playGame" destination="kIz-9F-2ob" id="73h-DT-IkL"/>
+                <outlet property="spLabel" destination="7d8-t4-Mfk" id="W6v-aM-PHZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="help.png" translatesAutoresizingMaskIntoConstraints="NO" id="rlr-a9-OTE">
+                    <rect key="frame" x="10" y="30" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="AwU-mK-aTf"/>
+                        <constraint firstAttribute="width" secondItem="rlr-a9-OTE" secondAttribute="height" id="w8n-Nf-1hk"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You only have to watch the ad once" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7d8-t4-Mfk">
+                    <rect key="frame" x="143" y="30" width="425" height="22"/>
+                    <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="click.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZM3-kN-qCt">
+                    <rect key="frame" x="120" y="72" width="40" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ZM3-kN-qCt" secondAttribute="height" multiplier="39:38" id="COs-Cx-p0j"/>
+                        <constraint firstAttribute="width" constant="40" id="K10-hl-4kK"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;INSTALL&quot; or &quot;VISIT SITE&quot; to support us" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRc-V2-huv">
+                    <rect key="frame" x="170" y="82" width="356" height="20"/>
+                    <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIz-9F-2ob">
+                    <rect key="frame" x="413" y="273" width="150" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="6gT-qn-Gat"/>
+                        <constraint firstAttribute="width" constant="150" id="ADx-29-bIE"/>
+                    </constraints>
+                    <state key="normal" image="play_button.png"/>
+                    <connections>
+                        <action selector="playGameDidTap:" destination="-1" eventType="touchUpInside" id="ImN-FO-3xu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yO7-Hn-XeD">
+                    <rect key="frame" x="413" y="211" width="148" height="47"/>
+                    <state key="normal" image="ad.png"/>
+                    <connections>
+                        <action selector="viewMoreAds:" destination="-1" eventType="touchUpInside" id="jgd-O7-kWO"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6m-ve-l7k" customClass="GADNativeExpressAdView">
+                    <rect key="frame" x="2" y="138" width="401" height="180"/>
+                    <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ora-kH-W0H">
+                    <rect key="frame" x="413" y="157" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ora-kH-W0H" secondAttribute="height" id="QyX-Fm-kx8"/>
+                        <constraint firstAttribute="width" constant="40" id="hpf-D3-gap"/>
+                    </constraints>
+                    <state key="normal" image="refund.png"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="s6m-ve-l7k" firstAttribute="top" secondItem="rlr-a9-OTE" secondAttribute="bottom" constant="8" id="2Ja-g3-ypb"/>
+                <constraint firstItem="rlr-a9-OTE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="2bm-qH-az9"/>
+                <constraint firstAttribute="trailing" secondItem="kIz-9F-2ob" secondAttribute="trailing" constant="5" id="7dg-ei-cM8"/>
+                <constraint firstItem="yO7-Hn-XeD" firstAttribute="leading" secondItem="kIz-9F-2ob" secondAttribute="leading" id="JJ9-m5-mVY"/>
+                <constraint firstItem="FRc-V2-huv" firstAttribute="centerY" secondItem="ZM3-kN-qCt" secondAttribute="centerY" id="Mhv-mI-JC6"/>
+                <constraint firstItem="s6m-ve-l7k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="2" id="NLu-t0-R24"/>
+                <constraint firstItem="kIz-9F-2ob" firstAttribute="top" secondItem="yO7-Hn-XeD" secondAttribute="bottom" constant="15" id="T1J-hR-5Dg"/>
+                <constraint firstItem="yO7-Hn-XeD" firstAttribute="top" secondItem="ora-kH-W0H" secondAttribute="bottom" constant="14" id="T88-Fg-uvN"/>
+                <constraint firstAttribute="bottom" secondItem="kIz-9F-2ob" secondAttribute="bottom" constant="5" id="TOP-ac-UoN"/>
+                <constraint firstAttribute="bottom" secondItem="s6m-ve-l7k" secondAttribute="bottom" constant="2" id="U6y-oQ-0FC"/>
+                <constraint firstItem="FRc-V2-huv" firstAttribute="leading" secondItem="ZM3-kN-qCt" secondAttribute="trailing" constant="10" id="Wty-uf-EfK"/>
+                <constraint firstItem="yO7-Hn-XeD" firstAttribute="trailing" secondItem="kIz-9F-2ob" secondAttribute="trailing" constant="-2" id="ekc-uk-r0b"/>
+                <constraint firstItem="rlr-a9-OTE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="ezI-mx-uH1"/>
+                <constraint firstItem="7d8-t4-Mfk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="fzF-hl-Ncg"/>
+                <constraint firstItem="yO7-Hn-XeD" firstAttribute="height" secondItem="kIz-9F-2ob" secondAttribute="height" constant="5" id="gI3-Xy-vu9"/>
+                <constraint firstItem="ora-kH-W0H" firstAttribute="leading" secondItem="yO7-Hn-XeD" secondAttribute="leading" id="hxH-17-yYT"/>
+                <constraint firstItem="ZM3-kN-qCt" firstAttribute="leading" secondItem="rlr-a9-OTE" secondAttribute="trailing" constant="10" id="pcQ-QG-xJQ"/>
+                <constraint firstItem="ZM3-kN-qCt" firstAttribute="top" secondItem="7d8-t4-Mfk" secondAttribute="bottom" constant="20" id="ryv-D7-Zey"/>
+                <constraint firstItem="yO7-Hn-XeD" firstAttribute="leading" secondItem="s6m-ve-l7k" secondAttribute="trailing" constant="10" id="tVW-W2-zHG"/>
+                <constraint firstAttribute="trailing" secondItem="7d8-t4-Mfk" secondAttribute="trailing" id="tli-Yi-Olu"/>
+                <constraint firstItem="7d8-t4-Mfk" firstAttribute="leading" secondItem="rlr-a9-OTE" secondAttribute="trailing" constant="33" id="upS-Nf-cf7"/>
+            </constraints>
+            <point key="canvasLocation" x="-1163" y="-140"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ad.png" width="297" height="64"/>
+        <image name="click.png" width="556" height="720"/>
+        <image name="help.png" width="300" height="289"/>
+        <image name="play_button.png" width="387" height="92"/>
+        <image name="refund.png" width="1000" height="1000"/>
+    </resources>
+</document>
