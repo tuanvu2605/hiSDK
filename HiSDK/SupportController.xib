@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,20 +35,20 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You only have to watch the ad once" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7d8-t4-Mfk">
-                    <rect key="frame" x="143" y="30" width="524" height="26"/>
+                    <rect key="frame" x="143" y="30" width="524" height="22"/>
                     <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="22"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="click.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZM3-kN-qCt">
-                    <rect key="frame" x="120" y="76" width="40" height="39"/>
+                    <rect key="frame" x="120" y="72" width="40" height="39"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="ZM3-kN-qCt" secondAttribute="height" multiplier="39:38" id="COs-Cx-p0j"/>
                         <constraint firstAttribute="width" constant="40" id="K10-hl-4kK"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;INSTALL&quot; or &quot;VISIT SITE&quot; to support us" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRc-V2-huv">
-                    <rect key="frame" x="170" y="84.5" width="360.5" height="23.5"/>
+                    <rect key="frame" x="170" y="81.5" width="356" height="20"/>
                     <fontDescription key="fontDescription" name="Hero" family="Hero" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -60,7 +59,7 @@
                         <constraint firstAttribute="height" constant="42" id="6gT-qn-Gat"/>
                         <constraint firstAttribute="width" constant="150" id="ADx-29-bIE"/>
                     </constraints>
-                    <state key="normal" image="play_button.png"/>
+                    <state key="normal" image="play_button1.png"/>
                     <connections>
                         <action selector="playGameDidTap:" destination="-1" eventType="touchUpInside" id="ImN-FO-3xu"/>
                     </connections>
@@ -133,7 +132,7 @@
         <image name="click.png" width="556" height="720"/>
         <image name="help.png" width="300" height="289"/>
         <image name="no_ads.png" width="170" height="170"/>
-        <image name="play_button.png" width="387" height="92"/>
+        <image name="play_button1.png" width="387" height="92"/>
         <image name="refund.png" width="200" height="200"/>
     </resources>
 </document>

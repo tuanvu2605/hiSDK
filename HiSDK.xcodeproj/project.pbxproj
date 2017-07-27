@@ -18,6 +18,8 @@
 		CC21D3C41F289B0B0029592F /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CC21D3BF1F289B0B0029592F /* NSString+Base64.m */; };
 		CC21D3C51F289B0B0029592F /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CC21D3C11F289B0B0029592F /* SFHFKeychainUtils.m */; };
 		CC21D3CB1F289E910029592F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC21D3CA1F289E910029592F /* StoreKit.framework */; };
+		CC83C0351F2994AC0046B14A /* ad.png in Resources */ = {isa = PBXBuildFile; fileRef = CC83C0341F2994AC0046B14A /* ad.png */; };
+		CC83C0371F2996760046B14A /* play_button1.png in Resources */ = {isa = PBXBuildFile; fileRef = CC83C0361F2996760046B14A /* play_button1.png */; };
 		CCC79F7D1F285220005F6501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC79F7C1F285220005F6501 /* AppDelegate.swift */; };
 		CCC79F7F1F285220005F6501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC79F7E1F285220005F6501 /* ViewController.swift */; };
 		CCC79F821F285220005F6501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC79F801F285220005F6501 /* Main.storyboard */; };
@@ -26,12 +28,8 @@
 		CCC79F901F285242005F6501 /* SupportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC79F8E1F285242005F6501 /* SupportController.swift */; };
 		CCC79F911F285242005F6501 /* SupportController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC79F8F1F285242005F6501 /* SupportController.xib */; };
 		CCC79F931F28535C005F6501 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC79F921F28535C005F6501 /* help.png */; };
-		CCC79F951F28554B005F6501 /* install.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC79F941F28554B005F6501 /* install.png */; };
 		CCC79F971F285554005F6501 /* click.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC79F961F285554005F6501 /* click.png */; };
-		CCC79F991F285598005F6501 /* install-button.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC79F981F285598005F6501 /* install-button.png */; };
 		CCC79F9B1F285687005F6501 /* Hero.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCC79F9A1F285687005F6501 /* Hero.otf */; };
-		CCC79F9D1F2866F2005F6501 /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC79F9C1F2866F2005F6501 /* play_button.png */; };
-		CCC79F9F1F28696C005F6501 /* ad.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC79F9E1F28696C005F6501 /* ad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +51,8 @@
 		CC21D3C11F289B0B0029592F /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
 		CC21D3C91F289B900029592F /* HiSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HiSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 		CC21D3CA1F289E910029592F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CC83C0341F2994AC0046B14A /* ad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad.png; sourceTree = "<group>"; };
+		CC83C0361F2996760046B14A /* play_button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button1.png; sourceTree = "<group>"; };
 		CCC79F791F285220005F6501 /* HiSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC79F7C1F285220005F6501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC79F7E1F285220005F6501 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,12 +63,8 @@
 		CCC79F8E1F285242005F6501 /* SupportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportController.swift; sourceTree = "<group>"; };
 		CCC79F8F1F285242005F6501 /* SupportController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SupportController.xib; sourceTree = "<group>"; };
 		CCC79F921F28535C005F6501 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
-		CCC79F941F28554B005F6501 /* install.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = install.png; sourceTree = "<group>"; };
 		CCC79F961F285554005F6501 /* click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = click.png; sourceTree = "<group>"; };
-		CCC79F981F285598005F6501 /* install-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "install-button.png"; sourceTree = "<group>"; };
 		CCC79F9A1F285687005F6501 /* Hero.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hero.otf; sourceTree = "<group>"; };
-		CCC79F9C1F2866F2005F6501 /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button.png; sourceTree = "<group>"; };
-		CCC79F9E1F28696C005F6501 /* ad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				CC21D3B61F289AF70029592F /* libs */,
-				CC00A5901F286EDF00C66937 /* Constants.swift */,
 				CC00A58F1F286D4B00C66937 /* resource */,
 				CCC79F8E1F285242005F6501 /* SupportController.swift */,
 				CCC79F8F1F285242005F6501 /* SupportController.xib */,
@@ -119,13 +114,11 @@
 		CC00A58F1F286D4B00C66937 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				CC83C0341F2994AC0046B14A /* ad.png */,
 				CC00A5921F2870E100C66937 /* GoogleService-Info.plist */,
-				CCC79F941F28554B005F6501 /* install.png */,
-				CCC79F981F285598005F6501 /* install-button.png */,
-				CCC79F9E1F28696C005F6501 /* ad.png */,
 				CCC79F921F28535C005F6501 /* help.png */,
 				CCC79F9A1F285687005F6501 /* Hero.otf */,
-				CCC79F9C1F2866F2005F6501 /* play_button.png */,
+				CC83C0361F2996760046B14A /* play_button1.png */,
 			);
 			name = resource;
 			sourceTree = "<group>";
@@ -179,6 +172,7 @@
 			children = (
 				CCC79F7C1F285220005F6501 /* AppDelegate.swift */,
 				CCC79F7E1F285220005F6501 /* ViewController.swift */,
+				CC00A5901F286EDF00C66937 /* Constants.swift */,
 				CC00A58E1F286D3B00C66937 /* SDK */,
 				CCC79F801F285220005F6501 /* Main.storyboard */,
 				CCC79F831F285220005F6501 /* Assets.xcassets */,
@@ -260,12 +254,10 @@
 				CC00A5931F2870E100C66937 /* GoogleService-Info.plist in Resources */,
 				CCC79F821F285220005F6501 /* Main.storyboard in Resources */,
 				6E4C53621F28E09F005D8FE5 /* no_ads.png in Resources */,
-				CCC79F991F285598005F6501 /* install-button.png in Resources */,
-				CCC79F9D1F2866F2005F6501 /* play_button.png in Resources */,
 				6E4C535E1F28DF84005D8FE5 /* refund.png in Resources */,
-				CCC79F9F1F28696C005F6501 /* ad.png in Resources */,
+				CC83C0371F2996760046B14A /* play_button1.png in Resources */,
+				CC83C0351F2994AC0046B14A /* ad.png in Resources */,
 				CCC79F911F285242005F6501 /* SupportController.xib in Resources */,
-				CCC79F951F28554B005F6501 /* install.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +306,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -469,6 +461,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "HiSDK-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -489,6 +482,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "HiSDK-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -38,7 +38,7 @@ class ViewController: UIViewController,WKUIDelegate {
     func webViewloadRequest()
     {
         
-        let myURL = URL(string: "http://oceanar.io/")
+        let myURL = URL(string: "http://flaap.io/#")
         let myRequest = URLRequest(url: myURL!)
         webgame.load(myRequest)
     }
@@ -65,15 +65,15 @@ extension ViewController : WKNavigationDelegate
     }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         
-        jsHiddenElementByIdForWebView(webView, id: "leaderboard");
-        jsHiddenElementByClassForWebView(webView, cl: "share")
-        jsHiddenElementByClassForWebView(webView, cl: "group-large-inline")
-        jsHiddenElementByClassForWebView(webView, cl: "footer")
-        let device = Device()
-        let groupOfAllowedDevices: [Device] = [.iPhone4,.iPhone4s, .iPhone5 , .iPhone5c ,.iPhone5s]
-        if device.isOneOf(groupOfAllowedDevices) {
-            jsHiddenElementByClassForWebView(webView, cl: "logo")
-        }
+//        jsHiddenElementByIdForWebView(webView, id: "leaderboard");
+//        jsHiddenElementByClassForWebView(webView, cl: "share")
+//        jsHiddenElementByClassForWebView(webView, cl: "group-large-inline")
+//        jsHiddenElementByClassForWebView(webView, cl: "footer")
+//        let device = Device()
+//        let groupOfAllowedDevices: [Device] = [.iPhone4,.iPhone4s, .iPhone5 , .iPhone5c ,.iPhone5s]
+//        if device.isOneOf(groupOfAllowedDevices) {
+//            jsHiddenElementByClassForWebView(webView, cl: "logo")
+//        }
 //        removeTagByJsQueryWithAttr("");
         
         
