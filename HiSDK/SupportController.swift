@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMobileAds
+import QuartzCore
 
 class SupportController: UIViewController ,GADNativeExpressAdViewDelegate, GADVideoControllerDelegate , GADRewardBasedVideoAdDelegate, UIAlertViewDelegate{
 
@@ -15,8 +16,20 @@ class SupportController: UIViewController ,GADNativeExpressAdViewDelegate, GADVi
      var rewardBasedVideo: GADRewardBasedVideoAd?
      var interstitial: GADInterstitial!
     @IBOutlet weak var spLabel: UILabel!
+    
+    @IBOutlet weak var btnRemoveAd: UIButton!
+    @IBOutlet weak var btnRefund: UIButton!
+    @IBOutlet weak var btnViewMoreAd: UIButton!
+    @IBOutlet weak var btnPlayGame: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setShadowForButton(btnRefund)
+        setShadowForButton(btnRemoveAd)
+        setShadowForButton(btnViewMoreAd)
+        setShadowForButton(btnPlayGame)
         
         
         rewardBasedVideo = GADRewardBasedVideoAd.sharedInstance()
@@ -55,6 +68,18 @@ class SupportController: UIViewController ,GADNativeExpressAdViewDelegate, GADVi
         request.testDevices = [kGADSimulatorID]
         nativeExpressAdView.load(request)
 
+    }
+    
+    func setShadowForButton(_ btn : UIButton )
+    {
+
+        
+        btn.imageView?.layer.cornerRadius = 7.0;
+        btn.layer.shadowRadius = 3.0;
+        btn.layer.shadowColor = UIColor.green.cgColor
+        btn.layer.shadowOffset = CGSize(width: 0, height: 10)
+        btn.layer.shadowOpacity = 0.5;
+        btn.layer.masksToBounds = false;
     }
     
     

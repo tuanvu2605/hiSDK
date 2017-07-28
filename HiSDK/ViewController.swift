@@ -38,7 +38,7 @@ class ViewController: UIViewController,WKUIDelegate {
     func webViewloadRequest()
     {
         
-        let myURL = URL(string: "http://flaap.io/#")
+        let myURL = URL(string: "http://flaap.io/")
         let myRequest = URLRequest(url: myURL!)
         webgame.load(myRequest)
     }
@@ -62,34 +62,38 @@ extension ViewController : WKNavigationDelegate
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         
         FTNotificationIndicator.showNotification(withTitle: "Unable to connect to the internet", message: "Please reConnect and try again!")
+        
+    
+        let nib = Bundle.main.loadNibNamed("NoInternetView", owner: nil, options: nil)
+        let view = nib?.first as! NoInternetView
+        view.frame = self.view.bounds;
+        self.view.addSubview(view);
     }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         
-//        jsHiddenElementByIdForWebView(webView, id: "leaderboard");
-//        jsHiddenElementByClassForWebView(webView, cl: "share")
-//        jsHiddenElementByClassForWebView(webView, cl: "group-large-inline")
-//        jsHiddenElementByClassForWebView(webView, cl: "footer")
-//        let device = Device()
-//        let groupOfAllowedDevices: [Device] = [.iPhone4,.iPhone4s, .iPhone5 , .iPhone5c ,.iPhone5s]
-//        if device.isOneOf(groupOfAllowedDevices) {
-//            jsHiddenElementByClassForWebView(webView, cl: "logo")
-//        }
-//        removeTagByJsQueryWithAttr("");
+        jsHiddenElementByIdForWebView(webView, id: "ads");
+        jsHiddenElementByIdForWebView(webView, id: "adunit");
         
-        
+        jsHiddenElementByClassForWebView(webView, cl: "adv s320x50");
+        jsHiddenElementByClassForWebView(webView, cl: "qc-text");
+        jsHiddenElementByClassForWebView(webView, cl: "panel death-ads-mobile");
+        jsHiddenElementByClassForWebView(webView, cl: "text-link");
         
         
     }
     
     func jsHiddenElementByIdForWebView(_ webView  : WKWebView , id : String)
     {
-        //leaderboard
-        let js  = "var element = document.getElementById('\(id)'); element.style.display = 'none';"
+        //leaderboard element.style.display = 'none';
+        let js  = "var element = document.getElementById('\(id)');  element.outerHTML = ''; delete element;"
         
         webView.evaluateJavaScript(js) { (rs, err) in
-            if (err != nil)
+            if (err == nil)
             {
-                
+                print("js result \(String(describing: rs))")
+            }else
+            {
+                print("err \(String(describing: err))")
             }
         }
     }

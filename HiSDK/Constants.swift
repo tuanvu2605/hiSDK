@@ -19,5 +19,5 @@ struct Admob {
 }
 
 struct IAP {
-    static let removeAdsIAPID = "net.hiiap.removeads1"
+    static let removeAdsIAPID = "vn.higamestudio.flapremoveads"
 }

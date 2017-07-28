@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NoInternetView" customModule="HiSDK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="u79-tL-Dg3">
+                    <rect key="frame" x="148" y="24" width="80" height="73"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="NrN-eH-ZRM"/>
+                        <constraint firstAttribute="width" secondItem="u79-tL-Dg3" secondAttribute="height" multiplier="1.1/1" id="pOb-F6-vlS"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DD5-3V-8qD">
+                    <rect key="frame" x="10" y="123" width="355" height="14"/>
+                    <attributedString key="attributedText">
+                        <fragment content="No internet connection">
+                            <attributes>
+                                <font key="NSFont" size="14" name="8BITWONDERNominal"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="u79-tL-Dg3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-20" id="1JL-DX-Go4"/>
+                <constraint firstAttribute="trailing" secondItem="DD5-3V-8qD" secondAttribute="trailing" constant="10" id="4ZM-bX-v4o"/>
+                <constraint firstItem="DD5-3V-8qD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="4ft-tU-0kp"/>
+                <constraint firstItem="DD5-3V-8qD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UsI-A9-Wns"/>
+                <constraint firstItem="u79-tL-Dg3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bys-T9-C5L"/>
+                <constraint firstItem="DD5-3V-8qD" firstAttribute="top" secondItem="u79-tL-Dg3" secondAttribute="bottom" constant="26" id="uLC-Mn-ZPS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="32.5" y="-154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon.png" width="1122" height="949"/>
+    </resources>
+</document>

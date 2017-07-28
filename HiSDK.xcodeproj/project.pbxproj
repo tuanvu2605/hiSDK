@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		6E4C535E1F28DF84005D8FE5 /* refund.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4C535D1F28DF84005D8FE5 /* refund.png */; };
 		6E4C53621F28E09F005D8FE5 /* no_ads.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4C53611F28E09F005D8FE5 /* no_ads.png */; };
+		6E86C1161F2A437B00E38D76 /* 8bit.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E86C1151F2A437A00E38D76 /* 8bit.ttf */; };
+		6E86C1181F2A449900E38D76 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E86C1171F2A449800E38D76 /* icon.png */; };
+		6EC5880B1F2A4F840032A9B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC5880A1F2A4F840032A9B2 /* QuartzCore.framework */; };
+		6EC5880D1F2A563E0032A9B2 /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC5880C1F2A563E0032A9B2 /* NoInternetView.swift */; };
+		6EC5880F1F2A56560032A9B2 /* NoInternetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EC5880E1F2A56560032A9B2 /* NoInternetView.xib */; };
+		6EED99881F2A47EF004FBB90 /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EED99871F2A47EF004FBB90 /* hand.png */; };
 		B2CA9FE2C2D5334180E1EF0C /* Pods_HiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113B1B2204A1F346C4DEA55D /* Pods_HiSDK.framework */; };
 		CC00A5911F286EDF00C66937 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00A5901F286EDF00C66937 /* Constants.swift */; };
 		CC00A5931F2870E100C66937 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC00A5921F2870E100C66937 /* GoogleService-Info.plist */; };
@@ -38,6 +44,12 @@
 		6AF063E37D3126BC1F8FF5ED /* Pods-HiSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiSDK/Pods-HiSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		6E4C535D1F28DF84005D8FE5 /* refund.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refund.png; sourceTree = "<group>"; };
 		6E4C53611F28E09F005D8FE5 /* no_ads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_ads.png; sourceTree = "<group>"; };
+		6E86C1151F2A437A00E38D76 /* 8bit.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = 8bit.ttf; path = ../../../8bit_wonder/8bit.ttf; sourceTree = "<group>"; };
+		6E86C1171F2A449800E38D76 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../icon.png; sourceTree = "<group>"; };
+		6EC5880A1F2A4F840032A9B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6EC5880C1F2A563E0032A9B2 /* NoInternetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
+		6EC5880E1F2A56560032A9B2 /* NoInternetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoInternetView.xib; sourceTree = "<group>"; };
+		6EED99871F2A47EF004FBB90 /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand.png; sourceTree = "<group>"; };
 		CC00A5901F286EDF00C66937 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CC00A5921F2870E100C66937 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC00A5941F2871C200C66937 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
@@ -72,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC5880B1F2A4F840032A9B2 /* QuartzCore.framework in Frameworks */,
 				CC21D3CB1F289E910029592F /* StoreKit.framework in Frameworks */,
 				CC00A5951F2871C200C66937 /* iAd.framework in Frameworks */,
 				B2CA9FE2C2D5334180E1EF0C /* Pods_HiSDK.framework in Frameworks */,
@@ -84,6 +97,7 @@
 		80906C58B41F26E200B157D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6EC5880A1F2A4F840032A9B2 /* QuartzCore.framework */,
 				CC21D3CA1F289E910029592F /* StoreKit.framework */,
 				CC00A5941F2871C200C66937 /* iAd.framework */,
 				113B1B2204A1F346C4DEA55D /* Pods_HiSDK.framework */,
@@ -107,6 +121,9 @@
 				CC00A58F1F286D4B00C66937 /* resource */,
 				CCC79F8E1F285242005F6501 /* SupportController.swift */,
 				CCC79F8F1F285242005F6501 /* SupportController.xib */,
+				6EC5880C1F2A563E0032A9B2 /* NoInternetView.swift */,
+				6EC5880E1F2A56560032A9B2 /* NoInternetView.xib */,
+				6E86C1171F2A449800E38D76 /* icon.png */,
 			);
 			name = SDK;
 			sourceTree = "<group>";
@@ -114,6 +131,8 @@
 		CC00A58F1F286D4B00C66937 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				6EED99871F2A47EF004FBB90 /* hand.png */,
+				6E86C1151F2A437A00E38D76 /* 8bit.ttf */,
 				CC83C0341F2994AC0046B14A /* ad.png */,
 				CC00A5921F2870E100C66937 /* GoogleService-Info.plist */,
 				CCC79F921F28535C005F6501 /* help.png */,
@@ -250,11 +269,15 @@
 				CCC79F931F28535C005F6501 /* help.png in Resources */,
 				CCC79F9B1F285687005F6501 /* Hero.otf in Resources */,
 				CCC79F841F285220005F6501 /* Assets.xcassets in Resources */,
+				6EC5880F1F2A56560032A9B2 /* NoInternetView.xib in Resources */,
 				CCC79F971F285554005F6501 /* click.png in Resources */,
 				CC00A5931F2870E100C66937 /* GoogleService-Info.plist in Resources */,
 				CCC79F821F285220005F6501 /* Main.storyboard in Resources */,
+				6E86C1161F2A437B00E38D76 /* 8bit.ttf in Resources */,
+				6E86C1181F2A449900E38D76 /* icon.png in Resources */,
 				6E4C53621F28E09F005D8FE5 /* no_ads.png in Resources */,
 				6E4C535E1F28DF84005D8FE5 /* refund.png in Resources */,
+				6EED99881F2A47EF004FBB90 /* hand.png in Resources */,
 				CC83C0371F2996760046B14A /* play_button1.png in Resources */,
 				CC83C0351F2994AC0046B14A /* ad.png in Resources */,
 				CCC79F911F285242005F6501 /* SupportController.xib in Resources */,
@@ -306,7 +329,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -324,6 +347,7 @@
 				CC21D3C21F289B0B0029592F /* IAPHelper.m in Sources */,
 				CC00A5911F286EDF00C66937 /* Constants.swift in Sources */,
 				CC21D3C41F289B0B0029592F /* NSString+Base64.m in Sources */,
+				6EC5880D1F2A563E0032A9B2 /* NoInternetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +480,7 @@
 				INFOPLIST_FILE = HiSDK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vn.higamestudio.oceanar;
+				PRODUCT_BUNDLE_IDENTIFIER = net.sinhviendev.flapio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "HiSDK-Bridging-Header.h";
@@ -477,7 +501,7 @@
 				INFOPLIST_FILE = HiSDK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vn.higamestudio.oceanar;
+				PRODUCT_BUNDLE_IDENTIFIER = net.sinhviendev.flapio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "HiSDK-Bridging-Header.h";
